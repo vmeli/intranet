@@ -1,0 +1,24 @@
+.org-section-bloques__SliderMain {
+	.Format1__slider {
+		position: relative;
+	}
+	.Format1__text {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		min-height: 50%;
+		background: linear-gradient(180deg,transparent 0,#000 133%);
+	}
+	.Format1__title {
+		font-family: 'Roboto';
+		font-size: 2.4rem;
+		position: absolute;
+		bottom: 2rem;
+		left: 2rem;
+		color: #FFF;
+		border-left: 4px solid #ce2c23;
+		padding-left: 1rem;
+		width: 75%;
+	}
+}

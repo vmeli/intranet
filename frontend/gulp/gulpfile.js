@@ -5,7 +5,7 @@ const gulp 			= require('gulp'),
 
 
 gulp.task('sass', function() {
-	 gulp.src('../src/layouts/*.scss')
+	 gulp.src('../assets/styles/intranet/layouts/*/*.scss')
 	 	 .pipe(sass())
 	 	 .pipe(gulp.dest('../../dist'))
 });

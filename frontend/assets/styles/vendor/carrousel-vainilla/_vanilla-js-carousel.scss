@@ -1,0 +1,151 @@
+// colors
+$bg: #272822;
+$white: #ffffff;
+$grey: #aaaaaa;
+$grey-medium: #e0e0e0;
+$grey-light: #f5f5f5;
+$grey-dark: #444444;
+
+.js-Carousel {
+	background: transparent;
+	background-image: url("/assets/images/larepublica/lrtv/loading-slider.gif");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 50px;
+	height: auto;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+	width: auto;
+
+	// list of images
+	> ul {
+		visibility: hidden;
+		height: auto;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 99999px;
+
+		li {
+			display: inline-block;
+			float: left;
+			width: auto;
+			img {
+				max-width: 100%;
+			}
+
+			&.js-Carousel_slide-items{
+				display: block;
+				visibility: hidden;
+			}
+
+			&.js-Carousel_active{
+				visibility: visible;
+			}
+
+			&.js-Carousel-animation{
+				transition: margin-left 0.2s ease;
+				-webkit-transition: margin-left 0.2s ease;
+				-moz-transition: margin-left 0.2s ease;
+				-o-transition: margin-left 0.2s ease;
+				transition: margin-left 0.2s ease;
+			}
+		}
+	}
+
+	// arrows - PREV and NEXT
+	.js-Carousel-arrowPrev,
+	.js-Carousel-arrowNext {
+		background: transparent;
+		padding: 0;
+		border: 0;
+		color: $grey-medium;
+		cursor: pointer;
+		font: 400 10em sans-serif;
+		height: 100%;
+		outline: 0;
+		position: absolute;
+		top: 0;
+		text-shadow: 0 0 10px $grey-dark;
+		width: 35px;
+		transition: all 0.2s ease;
+		-webkit-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+		-o-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+
+		&:hover {
+			color: $grey;
+		}
+	}
+
+	.js-Carousel-arrowPrev {
+		left: 0;
+	}
+	.js-Carousel-arrowNext {
+		right: 0;
+	}
+
+	// navigation dots
+	.js-Carousel-dots {
+		display: inline-block;
+		height: 15px;
+		margin: 0;
+		position: absolute;
+		bottom: 12px;
+		right: 12px;
+		width: auto;
+
+		li {
+			background: $grey;
+			border-radius: 14.5px;
+			cursor: pointer;
+			display: inline-block;
+			height: 14.5px;
+			margin: 0 9px;
+			width: 14.5px;
+			//transition: all 0.2s ease;
+			//-webkit-transition: all 0.2s ease;
+			//-moz-transition: all 0.2s ease;
+			//-o-transition: all 0.2s ease;
+			//transition: all 0.2s ease;
+
+			&.is-active {
+				background: $white;
+				box-shadow: 0 0 3px 3px #ddd;
+			}
+
+			&:hover {
+				background: $grey-light;
+			}
+		}
+	}
+
+	// buttons - PLAY and STOP
+	.js-Carousel-btnStop,
+	.js-Carousel-btnPlay {
+		background: $grey;
+		border: 0;
+		cursor: pointer;
+		height: 2.25em;
+		position: absolute;
+		bottom: 1em;
+		left: 2em;
+		text-align: center;
+		width: 5em;
+		//transition: all 0.2s ease;
+		//-webkit-transition: all 0.2s ease;
+		//-moz-transition: all 0.2s ease;
+		//-o-transition: all 0.2s ease;
+		//transition: all 0.2s ease;
+
+		&:hover {
+			background: $grey-light;
+		}
+	}
+
+	.js-Carousel-btnStop {
+		left: 100px;
+	}
+}

@@ -1,0 +1,22 @@
+// **
+// * Hoja de estilos para el HOME, la pagina de inicio de nameSite.pe
+// * @authors: Team Frontend GLR
+// * @description: Style sheet for nameSite.pe
+// * @file: intranet-main.scss
+// **
+//---------------------------------------------------------------
+// VENDOR
+//---------------------------------------------------------------
+@import "../../../vendor/normalize/normalize";
+//---------------------------------------------------------------
+// GRILLAS
+//---------------------------------------------------------------
+@import "../../settings/grid-system";
+//---------------------------------------------------------------
+// SET VARIABLES
+//---------------------------------------------------------------
+@import "../../settings/set-variables";
+//---------------------------------------------------------------
+// Organism styles
+//---------------------------------------------------------------
+@import "../../organism/section/bloques/SliderMain";

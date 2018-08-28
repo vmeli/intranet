@@ -1,0 +1,376 @@
+//---------------------------------------------------------------
+// url
+//---------------------------------------------------------------
+//$url-public-fonts : 'https://qa.libero.pe/assets/fonts';
+//$url-public : 'https://qa.libero.pe';
+//$url-prod-fonts: 'https://qa.libero.pe/assets/fonts';
+//$url-prod: 'https://qa.libero.pe';
+
+// VARIABLES - AMBIENTE LOCAL
+$url-public-fonts : '/assets/fonts';
+$url-public : '';
+$url-prod-fonts: '/assets/fonts';
+
+// VARIABLES - AMBIENTE QA
+//$url-public-fonts : 'https://qa.libero.pe/assets/fonts';
+//$url-public : 'https://qa.libero.pe';
+//$url-prod-fonts: 'https://qa.libero.pe/assets/fonts';
+
+// VARIABLES - AMBIENTE PROD
+//$url-public-fonts : 'https://libero.pe/assets/fonts';
+//$url-public : 'https://libero.pe';
+//$url-prod-fonts: 'https://libero.pe/assets/fonts';
+// path del css
+$url-prod: '';
+
+
+//---------------------------------------------------------------
+// fonts
+//---------------------------------------------------------------
+$font-base-size: 62.5%; // 10px
+$font-body-size: 1.3; // 13px
+$font-primary : 'Roboto'; //por revisar
+$font-global : $font-primary;
+$font-heading : 'saira-condensedextrabold';
+$font-text : 'Roboto';
+$font-text-section: 'saira-semicondensedregular';
+
+
+//---------------------------------------------------------------
+// Color
+//---------------------------------------------------------------
+$color-text: #000;
+$color-link: #000;
+
+
+
+//---------------------------------------------------------------
+// Media Queries
+//---------------------------------------------------------------
+$mq-desktop: 1024px;
+$mq-tablet: 800px;
+$mq-mobile: 601px;
+$mq-mobile-sm: 400px;
+
+$break-320: 320px;
+$break-324: 324px;
+$break-330: 330px;
+$break-350: 350px;
+$break-smallCellphone: 360px;
+$break-smallCellphone370: 370px;
+$break-390: 390px;
+$break-footer: 404px;
+$break-cellphone420: 420px;
+$break-filter-cellphone457: 457px;
+$break-filter-cellphone470: 470px;
+$break-cellphone: 480px;
+$break-cellphone500: 500px;
+$break-filter-cellphone510: 510px;
+$break-filter-cellphone520: 520px;
+$break-cellphone522: 522px;
+$break-filter-cellphone540: 540px;
+$break-filter-cellphone580: 580px;
+$break-second-row: 599px;
+$break-column-home: 600px;
+$break-filter: 602px;
+$break-filter-cellphone610: 610px;
+$break-filter-cellphone634: 634px;
+$break-filter-cellphone670: 670px;
+
+$break-filter-cellphone675: 675px;
+$break-filter-cellphone680: 680px;
+$break-filter-cellphone685: 685px;
+$break-filter-cellphone690: 690px;
+$break-filter-cellphone700: 700px;
+$break-tablet-impreso: 767px;
+$break-tablet: 768px;
+$break-filter-cellphone817: 817px;
+$break-filter-cellphone860: 860px;
+$break-web: 998px;
+$break-desktopGlr: 1000px;
+$break-grid-Glr: 1080px;
+$break-desktopGlrMoreOne: 1001px;
+$break-Bigweb: 1200px;
+$break-Landing: 1260px;
+$break-desktop1300: 1300px;
+$break-Laptop15pulg: 1366px;
+$break-bigLaptop: 1400px;
+$break-BigwebPc: 1600px;
+$break-break1900: 1900px;
+
+@mixin cell320p {
+  @media (min-width: #{$break-320}) {
+    @content;
+  }
+}
+
+@mixin cell324p {
+  @media (min-width: #{$break-324}) {
+    @content;
+  }
+}
+
+@mixin cell330p {
+  @media (min-width: #{$break-330}) {
+    @content;
+  }
+}
+
+@mixin cell350p {
+  @media (min-width: #{$break-350}) {
+    @content;
+  }
+}
+
+@mixin cell360p {
+  @media (min-width: #{$break-smallCellphone}) {
+    @content;
+  }
+}
+
+@mixin cell370p {
+  @media (min-width: #{$break-smallCellphone370}) {
+    @content;
+  }
+}
+
+@mixin cell390p {
+  @media (min-width: #{$break-390}) {
+    @content;
+  }
+}
+
+@mixin cell404p {
+  @media (min-width: #{$break-footer}) {
+    @content;
+  }
+}
+
+@mixin cell420p {
+  @media (min-width: #{$break-cellphone420}) {
+    @content;
+  }
+}
+
+@mixin cell457p {
+  @media (min-width: #{$break-filter-cellphone457}) {
+    @content;
+  }
+}
+
+@mixin cell470p {
+  @media (min-width: #{$break-filter-cellphone470}) {
+    @content;
+  }
+}
+
+@mixin cell480p {
+  @media (min-width: #{$break-cellphone}) {
+    @content;
+  }
+}
+
+@mixin cell500p {
+  @media (min-width: #{$break-cellphone500}) {
+    @content;
+  }
+}
+
+@mixin cell510p {
+  @media (min-width: #{$break-filter-cellphone510}) {
+    @content;
+  }
+}
+
+@mixin cell520p {
+  @media (min-width: #{$break-filter-cellphone520}) {
+    @content;
+  }
+}
+
+@mixin cell522p {
+  @media (min-width: #{$break-cellphone522}) {
+    @content;
+  }
+}
+
+@mixin cell540p {
+  @media (min-width: #{$break-filter-cellphone540}) {
+    @content;
+  }
+}
+
+
+@mixin cell580p {
+  @media (min-width: #{$break-filter-cellphone580}) {
+    @content;
+  }
+}
+
+@mixin cell599p {
+  @media (min-width: #{$break-second-row}) {
+    @content;
+  }
+}
+
+@mixin cell600p {
+  @media (min-width: #{$break-column-home}) {
+    @content;
+  }
+}
+
+@mixin cell602p {
+  @media (min-width: #{$break-filter}) {
+    @content;
+  }
+}
+
+@mixin cell634p {
+  @media (min-width: #{$break-filter-cellphone634}) {
+    @content;
+  }
+}
+
+@mixin cell610p {
+  @media (min-width: #{$break-filter-cellphone610}) {
+    @content;
+  }
+}
+
+@mixin cell670p {
+  @media (min-width: #{$break-filter-cellphone670}) {
+    @content;
+  }
+}
+
+@mixin cell675p {
+  @media (min-width: #{$break-filter-cellphone675}) {
+    @content;
+  }
+}
+
+@mixin cell680p {
+  @media (min-width: #{$break-filter-cellphone680}) {
+    @content;
+  }
+}
+
+@mixin cell685p {
+  @media (min-width: #{$break-filter-cellphone685}) {
+    @content;
+  }
+}
+
+@mixin cell690p {
+  @media (min-width: #{$break-filter-cellphone690}) {
+    @content;
+  }
+}
+
+@mixin cell700p {
+  @media (min-width: #{$break-filter-cellphone700}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$break-tablet}) {
+    @content;
+  }
+}
+
+@mixin cell800p {
+  @media (min-width: #{$mq-tablet}) {
+    @content;
+  }
+}
+
+@mixin cell817p{
+  @media (min-width: #{$break-filter-cellphone817}) {
+    @content;
+  }
+}
+
+@mixin cell860p{
+  @media (min-width: #{$break-filter-cellphone860}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$break-web}) {
+    @content;
+  }
+}
+
+@mixin cell1000p {
+  @media (min-width: #{$break-desktopGlr}) {
+    @content;
+  }
+}
+
+@mixin cell1001p {
+  @media (min-width: #{$break-desktopGlrMoreOne}) {
+    @content;
+  }
+}
+
+@mixin cell1080p {
+  @media (min-width: #{$break-grid-Glr}) {
+    @content;
+  }
+}
+
+@mixin bigDesktop {
+  @media (min-width: #{$break-Bigweb}) {
+    @content;
+  }
+}
+
+@mixin landingDesktop {
+  @media (min-width: #{$break-Landing}) {
+    @content;
+  }
+}
+
+@mixin cell1300p {
+  @media (min-width: #{$break-desktop1300}) {
+    @content;
+  }
+}
+
+@mixin laptop15p {
+  @media (min-width: #{$break-Laptop15pulg}) {
+    @content;
+  }
+}
+
+@mixin biglaptop {
+  @media (min-width: #{$break-bigLaptop}) {
+    @content;
+  }
+}
+
+@mixin BigwebPc {
+  @media (min-width: #{$break-BigwebPc}) {
+    @content;
+  }
+}
+
+@mixin cell1900p {
+  @media (min-width: #{$break-break1900}) {
+    @content;
+  }
+}
+
+@mixin maxcell404p {
+  @media (max-width: #{$break-footer}) {
+    @content;
+  }
+}
+
+@mixin maxtablet {
+  @media (max-width: #{$break-tablet-impreso}) {
+    @content;
+  }
+}

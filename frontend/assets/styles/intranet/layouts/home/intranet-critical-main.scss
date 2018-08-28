@@ -1,0 +1,33 @@
+// **
+// * Hoja de estilos CRITICOS para el HOME del INTRANET, la página de inicio nameSite.pe
+// * @authors: Team Frontend GLR
+// * @description: Style sheet for nameSite.pe
+// * @file: intranet-critical-main.scss
+// * @note: Este archivo debe pesar menos de 14kb por REGLA GENERAL (Gzip)
+// **
+
+//---------------------------------------------------------------
+// GRILLAS - CRITICAL
+//---------------------------------------------------------------
+@import "../../settings/grid-system-critical";
+//---------------------------------------------------------------
+// RESET
+//---------------------------------------------------------------
+@import "../../atoms/Reset";
+//---------------------------------------------------------------
+// SET VARIABLES
+//---------------------------------------------------------------
+@import "../../settings/set-variables";
+//---------------------------------------------------------------
+// GLOBAL STYLES BASIC
+//---------------------------------------------------------------
+@import "../../atoms/Global";
+//---------------------------------------------------------------
+// VANILLA SLIDER STYLES
+//---------------------------------------------------------------
+@import "../../../vendor/carrousel-vainilla/vanilla-js-carousel";
+
+//---------------------------------------------------------------
+// TEMPLATES STYLES BASIC
+//---------------------------------------------------------------
+@import "../../templates/Header";

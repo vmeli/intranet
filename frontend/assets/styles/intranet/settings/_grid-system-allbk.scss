@@ -78,7 +78,7 @@
 		width: 16.66%; }   
 }
 @media (min-width: 768px) and (max-width: 1000px) {
-	.col-1-sm, .col-2-sm, .col-3-sm, .col-4-sm, .col-5-sm, .col-6-sm, .col-7-sm, .col-8-sm, .col-9-sm, .col-10-sm, .col-11-sm, .col-12-sm, .col-13-sm, .col-14-sm, .col-15-sm, .col-16-sm, .col-17-sm, .col-18-sm, .col-19-sm, .col-20-sm, .col-thirdpart-sm, .col-300-sm, .col-300-offset-sm, .col-310-sm, .col-310-offset-sm, .col-320-offset-sm, .col-320-sm, .col-330-offset-sm, .col-330-sm, .col-480-sm, .col-480-offset-sm, .col-540-sm, .col-540-offset-sm, .col-sixthpart-sm{
+	.col-1-sm, .col-2-sm, .col-3-sm, .col-4-sm, .col-5-sm, .col-6-sm, .col-7-sm, .col-8-sm, .col-9-sm, .col-10-sm, .col-11-sm, .col-12-sm, .col-13-sm, .col-14-sm, .col-15-sm, .col-16-sm, .col-17-sm, .col-18-sm, .col-19-sm, .col-20-sm, .col-thirdpart-sm, .col-300-sm, .col-300-offset-sm, .col-310-sm, .col-310-offset-sm, .col-320-offset-sm, .col-320-sm, .col-480-sm, .col-480-offset-sm, .col-540-sm, .col-540-offset-sm, .col-sixthpart-sm{
 		float: left; }
 	.col-1-sm {
 		width: 5%; }
@@ -126,8 +126,6 @@
 		width: 320px; }
 	.col-320-sm {
 		width: 330px; }
-	.col-330-sm {
-		width: 340px; }
 	.col-480-sm {
 		width: 490px; }
 	.col-540-sm {
@@ -138,8 +136,6 @@
 		width: calc(100% - 320px); }
 	.col-320-offset-sm {
 		width: calc(100% - 330px); }
-	.col-330-offset-sm {
-		width: calc(100% - 340px); }
 	.col-480-offset-sm {
 		width: calc(100% - 490px); }
 	.col-540-offset-sm {
@@ -150,7 +146,7 @@
 		width: 16.66%; } 
 }
 @media (min-width: 1000px) {
-	.col-1-md, .col-2-md, .col-3-md, .col-4-md, .col-5-md, .col-6-md, .col-7-md, .col-8-md, .col-9-md, .col-10-md, .col-11-md, .col-12-md, .col-13-md, .col-14-md, .col-15-md, .col-16-md, .col-17-md, .col-18-md, .col-19-md, .col-20-md, .col-thirdpart-md, .col-300-md, .col-300-offset-md, .col-310-md, .col-310-offset-md, .col-320-md, .col-320-offset-md, .col-330-md, .col-330-offset-md, .col-480-md, .col-480-offset-md, .col-540-md, .col-540-offset-md, .col-sixthpart-md{
+	.col-1-md, .col-2-md, .col-3-md, .col-4-md, .col-5-md, .col-6-md, .col-7-md, .col-8-md, .col-9-md, .col-10-md, .col-11-md, .col-12-md, .col-13-md, .col-14-md, .col-15-md, .col-16-md, .col-17-md, .col-18-md, .col-19-md, .col-20-md, .col-thirdpart-md, .col-300-md, .col-300-offset-md, .col-310-md, .col-310-offset-md, .col-320-md, .col-320-offset-md, .col-480-md, .col-480-offset-md, .col-540-md, .col-540-offset-md, .col-sixthpart-md{
 		float: left; }
 	.col-1-md {
 		width: 5%; }
@@ -198,8 +194,6 @@
 		width: 320px; }
 	.col-320-md {
 		width: 330px; }
-	.col-330-md {
-		width: 340px; }
 	.col-480-md {
 		width: 490px; }
 	.col-540-md {
@@ -210,8 +204,6 @@
 		width: calc(100% - 320px); }
 	.col-320-offset-md {
 		width: calc(100% - 330px); }
-	.col-330-offset-md {
-		width: calc(100% - 340px); }
 	.col-480-offset-md {
 		width: calc(100% - 490px); }
 	.col-540-offset-md {
@@ -222,6 +214,7 @@
 		width: 16.66%; } 
 }
 .cgrid-container {
+	background-color: #ffffff;
 	width: 100%;
 	max-width: 1000px;
 	margin: auto;

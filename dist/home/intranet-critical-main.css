@@ -1,18 +1,8 @@
-/*
- *  Grid System 20 columns
- */
-/* Function
----------------------------------------------------------------*/
-/* Variables
----------------------------------------------------------------*/
 [class^="col-"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* class-gral
-/* Common styles
----------------------------------------------------------------*/
 .cgrid-row {
   margin-left: -5px;
   margin-right: -5px; }
@@ -28,92 +18,196 @@
   padding-right: 5px; }
 
 @media (max-width: 768px) {
-  .col-1-xs, .col-2-xs, .col-3-xs, .col-4-xs, .col-5-xs, .col-6-xs, .col-7-xs, .col-8-xs, .col-9-xs, .col-10-xs, .col-11-xs, .col-12-xs, .col-13-xs, .col-14-xs, .col-15-xs, .col-16-xs, .col-17-xs, .col-18-xs, .col-19-xs, .col-20-xs, .col-thirdpart-xs {
+  .col-1-xs, .col-2-xs, .col-3-xs, .col-4-xs, .col-5-xs, .col-6-xs, .col-7-xs, .col-8-xs, .col-9-xs, .col-10-xs, .col-11-xs, .col-12-xs, .col-13-xs, .col-14-xs, .col-15-xs, .col-16-xs, .col-17-xs, .col-18-xs, .col-19-xs, .col-20-xs, .col-thirdpart-xs, .col-sixthpart-xs {
     float: left; }
+  .col-1-xs {
+    width: 5%; }
+  .col-2-xs {
+    width: 10%; }
+  .col-3-xs {
+    width: 15%; }
   .col-4-xs {
     width: 20%; }
   .col-5-xs {
     width: 25%; }
+  .col-6-xs {
+    width: 30%; }
+  .col-7-xs {
+    width: 35%; }
+  .col-8-xs {
+    width: 40%; }
+  .col-9-xs {
+    width: 45%; }
   .col-10-xs {
     width: 50%; }
+  .col-11-xs {
+    width: 55%; }
+  .col-12-xs {
+    width: 60%; }
+  .col-13-xs {
+    width: 65%; }
+  .col-14-xs {
+    width: 70%; }
+  .col-15-xs {
+    width: 75%; }
+  .col-16-xs {
+    width: 80%; }
+  .col-17-xs {
+    width: 85%; }
+  .col-18-xs {
+    width: 90%; }
+  .col-19-xs {
+    width: 95%; }
   .col-20-xs {
     width: 100%; }
   .col-thirdpart-xs {
-    width: 33.33%; } }
+    width: 33.33%; }
+  .col-sixthpart-xs {
+    width: 16.66%; } }
 
 @media (min-width: 768px) and (max-width: 1000px) {
-  .col-1-sm, .col-2-sm, .col-3-sm, .col-4-sm, .col-5-sm, .col-6-sm, .col-7-sm, .col-8-sm, .col-9-sm, .col-10-sm, .col-11-sm, .col-12-sm, .col-13-sm, .col-14-sm, .col-15-sm, .col-16-sm, .col-17-sm, .col-18-sm, .col-19-sm, .col-20-sm, .col-thirdpart-sm, .col-300-sm, .col-300-offset-sm, .col-310-sm, .col-310-offset-sm, .col-565-sm, .col-565-offset-sm, .col-555-offset-sm, .col-735-offset-sm, .col-833-offset-sm, .col-467-offset-sm {
+  .col-1-sm, .col-2-sm, .col-3-sm, .col-4-sm, .col-5-sm, .col-6-sm, .col-7-sm, .col-8-sm, .col-9-sm, .col-10-sm, .col-11-sm, .col-12-sm, .col-13-sm, .col-14-sm, .col-15-sm, .col-16-sm, .col-17-sm, .col-18-sm, .col-19-sm, .col-20-sm, .col-thirdpart-sm, .col-300-sm, .col-300-offset-sm, .col-310-sm, .col-310-offset-sm, .col-320-offset-sm, .col-320-sm, .col-330-offset-sm, .col-330-sm, .col-480-sm, .col-480-offset-sm, .col-540-sm, .col-540-offset-sm, .col-sixthpart-sm {
     float: left; }
+  .col-1-sm {
+    width: 5%; }
+  .col-2-sm {
+    width: 10%; }
+  .col-3-sm {
+    width: 15%; }
   .col-4-sm {
     width: 20%; }
   .col-5-sm {
     width: 25%; }
+  .col-6-sm {
+    width: 30%; }
+  .col-7-sm {
+    width: 35%; }
+  .col-8-sm {
+    width: 40%; }
+  .col-9-sm {
+    width: 45%; }
   .col-10-sm {
     width: 50%; }
+  .col-11-sm {
+    width: 55%; }
+  .col-12-sm {
+    width: 60%; }
+  .col-13-sm {
+    width: 65%; }
+  .col-14-sm {
+    width: 70%; }
+  .col-15-sm {
+    width: 75%; }
+  .col-16-sm {
+    width: 80%; }
+  .col-17-sm {
+    width: 85%; }
+  .col-18-sm {
+    width: 90%; }
+  .col-19-sm {
+    width: 95%; }
   .col-20-sm {
     width: 100%; }
   .col-300-sm {
     width: 310px; }
   .col-310-sm {
     width: 320px; }
-  .col-565-sm {
-    width: 575px; }
+  .col-320-sm {
+    width: 330px; }
+  .col-330-sm {
+    width: 340px; }
+  .col-480-sm {
+    width: 490px; }
+  .col-540-sm {
+    width: 550px; }
   .col-300-offset-sm {
     width: calc(100% - 310px); }
   .col-310-offset-sm {
     width: calc(100% - 320px); }
-  .col-565-offset-sm {
-    width: calc(100% - 575px); }
-  .col-555-offset-sm {
-    width: calc(100% - 555px); }
-  .col-735-offset-sm {
-    width: calc(100% - 735px); }
-  .col-833-offset-sm {
-    width: calc(100% - 833px); }
-  .col-467-offset-sm {
-    width: calc(100% - 467px); }
+  .col-320-offset-sm {
+    width: calc(100% - 330px); }
+  .col-330-offset-sm {
+    width: calc(100% - 340px); }
+  .col-480-offset-sm {
+    width: calc(100% - 490px); }
+  .col-540-offset-sm {
+    width: calc(100% - 550px); }
   .col-thirdpart-sm {
-    width: 33.33%; } }
+    width: 33.33%; }
+  .col-sixthpart-sm {
+    width: 16.66%; } }
 
 @media (min-width: 1000px) {
-  .col-1-md, .col-2-md, .col-3-md, .col-4-md, .col-5-md, .col-6-md, .col-7-md, .col-8-md, .col-9-md, .col-10-md, .col-11-md, .col-12-md, .col-13-md, .col-14-md, .col-15-md, .col-16-md, .col-17-md, .col-18-md, .col-19-md, .col-20-md, .col-thirdpart-md, .col-300-md, .col-300-offset-md, .col-310-md, .col-310-offset-md, .col-565-md, .col-565-offset-md, .col-555-offset-md, .col-735-offset-md, .col-833-offset-md, .col-467-offset-md {
+  .col-1-md, .col-2-md, .col-3-md, .col-4-md, .col-5-md, .col-6-md, .col-7-md, .col-8-md, .col-9-md, .col-10-md, .col-11-md, .col-12-md, .col-13-md, .col-14-md, .col-15-md, .col-16-md, .col-17-md, .col-18-md, .col-19-md, .col-20-md, .col-thirdpart-md, .col-300-md, .col-300-offset-md, .col-310-md, .col-310-offset-md, .col-320-md, .col-320-offset-md, .col-330-md, .col-330-offset-md, .col-480-md, .col-480-offset-md, .col-540-md, .col-540-offset-md, .col-sixthpart-md {
     float: left; }
-  .col-4-md {
-    width: 20%; }
+  .col-1-md {
+    width: 5%; }
+  .col-2-md {
+    width: 10%; }
+  .col-3-md {
+    width: 15%; }
   .col-5-md {
     width: 25%; }
+  .col-4-md {
+    width: 20%; }
+  .col-6-md {
+    width: 30%; }
+  .col-7-md {
+    width: 35%; }
+  .col-8-md {
+    width: 40%; }
   .col-9-md {
     width: 45%; }
   .col-10-md {
     width: 50%; }
   .col-11-md {
     width: 55%; }
+  .col-12-md {
+    width: 60%; }
+  .col-13-md {
+    width: 65%; }
+  .col-14-md {
+    width: 70%; }
+  .col-15-md {
+    width: 75%; }
   .col-16-md {
     width: 80%; }
+  .col-17-md {
+    width: 85%; }
+  .col-18-md {
+    width: 90%; }
+  .col-19-md {
+    width: 95%; }
   .col-20-md {
     width: 100%; }
   .col-300-md {
     width: 310px; }
   .col-310-md {
     width: 320px; }
-  .col-565-md {
-    width: 575px; }
+  .col-320-md {
+    width: 330px; }
+  .col-330-md {
+    width: 340px; }
+  .col-480-md {
+    width: 490px; }
+  .col-540-md {
+    width: 550px; }
   .col-300-offset-md {
     width: calc(100% - 310px); }
   .col-310-offset-md {
     width: calc(100% - 320px); }
-  .col-565-offset-md {
-    width: calc(100% - 575px); }
-  .col-555-offset-md {
-    width: calc(100% - 555px); }
-  .col-735-offset-md {
-    width: calc(100% - 735px); }
-  .col-833-offset-md {
-    width: calc(100% - 833px); }
-  .col-467-offset-md {
-    width: calc(100% - 467px); }
+  .col-320-offset-md {
+    width: calc(100% - 330px); }
+  .col-330-offset-md {
+    width: calc(100% - 340px); }
+  .col-480-offset-md {
+    width: calc(100% - 490px); }
+  .col-540-offset-md {
+    width: calc(100% - 550px); }
   .col-thirdpart-md {
-    width: 33.33%; } }
+    width: 33.33%; }
+  .col-sixthpart-md {
+    width: 16.66%; } }
 
 .cgrid-container {
   width: 100%;
@@ -124,9 +218,6 @@
     display: table; }
   .cgrid-container:after {
     clear: both; }
-
-.tem_Body .cgrid-container {
-  background-color: #fff; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -309,6 +400,127 @@ a {
       background: #f5f5f5; }
   .js-Carousel .js-Carousel-btnStop {
     left: 100px; }
+
+#v-cal *, #v-cal :after, #v-cal :before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#v-cal {
+  background-color: #fff;
+  border-radius: 0;
+  border: 1px solid #e7e9ed;
+  -webkit-box-shadow: 0 4px 22px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 22px 0 rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%; }
+
+#v-cal .vcal-btn {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: button;
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  line-height: normal;
+  min-width: 27px;
+  outline: none;
+  overflow: visible;
+  padding: 0;
+  text-align: center; }
+
+#v-cal .vcal-btn:active {
+  border-radius: 0;
+  -webkit-box-shadow: 0 0 0 2px rgba(16, 152, 158, 0.1);
+  box-shadow: 0 0 0 2px rgba(16, 152, 158, 0.1); }
+
+#v-cal .vcal-header {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 19.2px 22.4px;
+  padding: 1.2rem 1.4rem; }
+
+#v-cal .vcal-header svg {
+  fill: #10989e; }
+
+#v-cal .vcal-header__label {
+  font-weight: 700;
+  text-align: center;
+  width: 100%; }
+
+#v-cal .vcal-week {
+  background-color: #e7e9ed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+#v-cal .vcal-week span {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 14.28%;
+  flex: 0 0 14.28%;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  max-width: 14.28%;
+  padding: 19.2px 22.4px;
+  padding: 1.2rem 1.4rem;
+  text-align: center;
+  text-transform: uppercase; }
+
+#v-cal .vcal-body {
+  background-color: rgba(231, 233, 237, 0.3);
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+#v-cal .vcal-body, #v-cal .vcal-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+#v-cal .vcal-date {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 14.28%;
+  flex: 0 0 14.28%;
+  max-width: 14.28%;
+  padding: 19.2px 0;
+  padding: 1.2rem 0; }
+
+#v-cal .vcal-date--active {
+  cursor: pointer; }
+
+#v-cal .vcal-date--today {
+  background-color: #10989e;
+  color: #fff; }
+
+#v-cal .vcal-date--selected {
+  background-color: #e7e9ed;
+  color: #333; }
+
+#v-cal .vcal-date--disabled {
+  border-radius: 0;
+  cursor: not-allowed;
+  opacity: .5; }
 
 .tem_Wrapper-header {
   background-image: url("../../frontend/assets/images/desing/bg_intranet.jpg");

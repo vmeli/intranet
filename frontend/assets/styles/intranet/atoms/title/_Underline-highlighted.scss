@@ -1,0 +1,15 @@
+.atm-title_Underline-highlighted {
+	position: relative;
+	font-family: 'Roboto';
+	font-size: 1.8rem;
+	border-bottom: 2px solid #F0F0F0;
+	margin-bottom: 1.5rem;
+	&:after {
+		content: "";
+		display: block;
+		border: 1px solid #ce2c23;
+		width: 50%;
+		position: absolute;
+		bottom: -2px;
+	}
+}

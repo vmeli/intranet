@@ -1,0 +1,23 @@
+.mol-mediaObject__Format1 {
+	padding-bottom: 3rem;
+	.Format1__container-image {
+		width: 63px;
+	}
+	.Format1__figure {
+		img {
+			border-radius: 100%;
+		}
+	}
+	.Format1__content {
+		padding-left: 2rem;
+		width: calc( 100% - 63px);
+	}
+	.Format1__author {
+		font-size: 1.8rem;
+		color: #576060;
+	}
+	.Format1__area {
+		font-size: 1.4rem;
+		color: #90999a;
+	}
+}

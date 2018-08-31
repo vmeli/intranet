@@ -1,25 +1,15 @@
-const gulp 			= require('gulp'),
-	  sass 			= require('gulp-sass'),
-	  autoprefixer 	= require('gulp-autoprefixer'),
-	  browserSync 	= require('browser-sync');
+const gulp          = require('gulp'),
+      sass          = require('gulp-sass'),
+      autoprefixer  = require('gulp-autoprefixer'),
+      browserSync   = require('browser-sync');
 
 
 gulp.task('sass', function() {
-	 gulp.src('../assets/styles/intranet/layouts/*/*.scss')
-	 	 .pipe(sass())
-	 	 .pipe(gulp.dest('../../dist'))
+      gulp.src('../assets/styles/intranet/layouts/home/style.scss')
+          .pipe(sass())
+          .pipe(gulp.dest('../../dist/home'))
 });
 
 gulp.task('watch', function() {
-	gulp.watch('../src/layouts/*.scss',['sass']);
+    gulp.watch('../assets/styles/intranet/**/**/*.scss', ['sass'])
 });
-
-gulp.task('browser-sync', function() {  
-    browserSync.init(["../../dist/*.css"], {
-        server: {
-            baseDir: "../../"
-        }
-    });
-});
-
-

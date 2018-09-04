@@ -343,6 +343,21 @@ template {
     color: #FFF;
     background-color: #CE2C23; }
 
+.atm-btn__Rectangle {
+  display: block;
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #fafafa; }
+  @media (min-width: 1000px) {
+    .atm-btn__Rectangle {
+      height: 81px; } }
+  .atm-btn__Rectangle.atm-btn__Rectangle--Lr {
+    background-color: #d82238; }
+  .atm-btn__Rectangle.atm-btn__Rectangle--Libero {
+    background-color: #005fde; }
+  .atm-btn__Rectangle.atm-btn__Rectangle--ElPopular {
+    background-color: #ec0044; }
+
 .org-section-bloques__SliderMain .Format1__slider {
   position: relative; }
 
@@ -383,6 +398,9 @@ template {
   .org-section-bloque__Eventos .atm-title_Rectangle-highlighted,
   .org-section-bloque__Comunicados .atm-title_Rectangle-highlighted {
     width: 314px; } }
+
+.org-section-bloque__Accesos li {
+  margin-bottom: 1rem; }
 
 .mol-mediaObject__FormatBaseMediaObject {
   font-size: 0; }

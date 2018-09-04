@@ -1,5 +1,29 @@
 .tem_Footer {
 	.Footer__logoIntranet{
 		text-align: center;
+		position: relative;
+		img {
+			background-color: #FFF;
+			padding: 0 4rem;
+		}
+	}
+	.Footer__line {
+		width: 100%;
+		max-width: 900px;
+		border: 1px solid #D4D4D4;
+		position: absolute;
+		bottom: 50%;
+		z-index: -1;
+	}
+	.Footer__logosSites {
+		font-size: 0;
+		text-align: center;
+		img[src$=".svg"] {
+			height: 16px;
+		}
+		&--item {
+			display: inline-block;
+			padding: 0 2rem;
+		}
 	}
 }

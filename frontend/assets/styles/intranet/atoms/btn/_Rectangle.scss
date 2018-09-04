@@ -1,0 +1,18 @@
+.atm-btn__Rectangle {
+	display: block;
+	text-align: center;
+	padding: 2rem 0;
+	background-color: #fafafa;
+	@include cell1000p {
+		height: 81px;
+	}
+	&#{&}--Lr {
+		background-color: #d82238;
+	}
+	&#{&}--Libero {
+		background-color: #005fde;
+	}
+	&#{&}--ElPopular {
+		background-color: #ec0044;
+	}
+}

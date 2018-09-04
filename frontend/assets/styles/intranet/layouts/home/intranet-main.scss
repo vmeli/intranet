@@ -26,14 +26,16 @@
 @import "../../atoms/title/Underline-highlighted";
 @import "../../atoms/title/Rectangle-highlighted";
 @import "../../atoms/btn/More-views";
+@import "../../atoms/btn/Rectangle";
 
 //---------------------------------------------------------------
 // ORGANISM STYLES
 //---------------------------------------------------------------
-@import "../../organism/section/bloques/SliderMain";
+@import "../../organism/section/bloques/SliderMain"; 
 @import "../../organism/section/bloques/MediaObject";
 @import "../../organism/section/bloques/Calendar";
 @import "../../organism/section/bloques/Comunicados";
+@import "../../organism/section/bloques/Accesos";
 //---------------------------------------------------------------
 // MOLECULES STYLES
 //---------------------------------------------------------------

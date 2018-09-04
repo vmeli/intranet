@@ -1,0 +1,15 @@
+.org-section-bloque__Calendar {
+	#v-cal {
+		.vcal-date {
+			color: #606060;
+		}
+		.vcal-week {
+			background-color: #FFF;
+			border-bottom: 2px solid #CE2C23;
+		}
+		.vcal-date--today {
+			background-color: #F4E2E2;
+			color: #CE2C23; 
+		}
+	}
+}

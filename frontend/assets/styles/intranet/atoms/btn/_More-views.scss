@@ -1,0 +1,17 @@
+$btn-color: #CE2C23; 
+
+.atm-btn__More-views {
+	font-size: 1.6rem;
+	line-height: 3.5rem;
+	padding: 0 1.9em;
+	color: $btn-color;
+	border: 1px solid $btn-color; 
+	border-radius: 4px;
+	transition: all .4s linear;
+	display: table;
+	margin: auto;
+	&:hover {
+		color: #FFF;
+		background-color: $btn-color;
+	}
+}

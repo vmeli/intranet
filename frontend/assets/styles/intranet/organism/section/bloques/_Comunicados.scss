@@ -1,0 +1,8 @@
+.org-section-bloque__Eventos,
+.org-section-bloque__Comunicados {
+	.atm-title_Rectangle-highlighted {
+		@include cell1000p {
+			width: 314px;
+		}
+	}	
+}

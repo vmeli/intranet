@@ -298,10 +298,13 @@ template {
   display: none; }
 
 .wrapper-1060 {
-  box-shadow: 0 10px 30px 0 #bbb;
+  box-shadow: 0 3px 22px 0 rgba(187, 187, 187, 0.7);
   width: 100%;
   max-width: 1060px;
   margin: auto; }
+
+.pl-2 {
+  padding-left: 2rem; }
 
 .atm-title_Underline-highlighted {
   position: relative;
@@ -316,6 +319,29 @@ template {
     width: 50%;
     position: absolute;
     bottom: -2px; }
+
+.atm-title_Rectangle-highlighted {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 4.8rem;
+  background-color: #f26262;
+  color: #FFF;
+  padding: 0 2rem; }
+
+.atm-btn__More-views {
+  font-size: 1.6rem;
+  line-height: 3.5rem;
+  padding: 0 1.9em;
+  color: #CE2C23;
+  border: 1px solid #CE2C23;
+  border-radius: 4px;
+  transition: all .4s linear;
+  display: table;
+  margin: auto; }
+  .atm-btn__More-views:hover {
+    color: #FFF;
+    background-color: #CE2C23; }
 
 .org-section-bloques__SliderMain .Format1__slider {
   position: relative; }
@@ -339,6 +365,22 @@ template {
   padding-left: 1rem;
   width: 75%; }
 
+.org-section-bloque__Calendar #v-cal .vcal-date {
+  color: #606060; }
+
+.org-section-bloque__Calendar #v-cal .vcal-week {
+  background-color: #FFF;
+  border-bottom: 2px solid #CE2C23; }
+
+.org-section-bloque__Calendar #v-cal .vcal-date--today {
+  background-color: #F4E2E2;
+  color: #CE2C23; }
+
+@media (min-width: 1000px) {
+  .org-section-bloque__Eventos .atm-title_Rectangle-highlighted,
+  .org-section-bloque__Comunicados .atm-title_Rectangle-highlighted {
+    width: 314px; } }
+
 .mol-mediaObject__FormatBaseMediaObject {
   font-size: 0; }
   .mol-mediaObject__FormatBaseMediaObject [class$="__container-image"],
@@ -361,3 +403,9 @@ template {
   .mol-mediaObject__Format1 .Format1__area {
     font-size: 1.4rem;
     color: #90999a; }
+
+.mol-card__Format1 .Format1__time,
+.mol-card__Format1 .Format1__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 1.6rem; }

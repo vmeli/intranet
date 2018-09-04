@@ -24,14 +24,19 @@
 // ATOMS STYLES
 //---------------------------------------------------------------
 @import "../../atoms/title/Underline-highlighted";
+@import "../../atoms/title/Rectangle-highlighted";
+@import "../../atoms/btn/More-views";
 
 //---------------------------------------------------------------
 // ORGANISM STYLES
 //---------------------------------------------------------------
 @import "../../organism/section/bloques/SliderMain";
 @import "../../organism/section/bloques/MediaObject";
+@import "../../organism/section/bloques/Calendar";
+@import "../../organism/section/bloques/Comunicados";
 //---------------------------------------------------------------
 // MOLECULES STYLES
 //---------------------------------------------------------------
 @import "../../molecules/mediaObject/FormatBaseMediaObject";
 @import "../../molecules/mediaObject/Format1";
+@import "../../molecules/card/Format1";

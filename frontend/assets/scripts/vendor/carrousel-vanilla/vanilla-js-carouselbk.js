@@ -1665,3 +1665,4 @@ export default function Carousel(options) {
         'stop': stop
     };
 }
+

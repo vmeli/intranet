@@ -46,8 +46,3 @@ var vanillaCalendar = {
 };
 
 
-window.addEventListener('load', function () {
-    vanillaCalendar.init({
-        disablePastDays: true
-    });
-})

@@ -1,6 +1,7 @@
 .tem_Footer {
+	text-align: center;
 	.Footer__logoIntranet{
-		text-align: center;
+		//text-align: center;
 		position: relative;
 		img {
 			background-color: #FFF;
@@ -25,5 +26,11 @@
 			display: inline-block;
 			padding: 0 2rem;
 		}
+	}
+	.Footer__logoIntranet {
+		padding: 3rem 0;
+	}
+	.Footer__copyright {
+		padding: 2rem 0;
 	}
 }

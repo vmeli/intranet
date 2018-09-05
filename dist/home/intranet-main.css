@@ -301,10 +301,24 @@ template {
   box-shadow: 0 3px 22px 0 rgba(187, 187, 187, 0.7);
   width: 100%;
   max-width: 1060px;
-  margin: auto; }
+  margin: auto;
+  padding: 10px; }
+  @media (min-width: 1000px) {
+    .wrapper-1060 {
+      padding: 3rem 0; } }
 
-.pl-2 {
-  padding-left: 2rem; }
+@media (min-width: 768px) {
+  .pl-2 {
+    padding-left: 2rem; } }
+
+[class*="org-section-bloque"]:not(.org-section-bloques__SliderMain) {
+  margin-bottom: 2rem; }
+
+.mol-card__Format1 img {
+  width: 100%; }
+  @media (min-width: 1000px) {
+    .mol-card__Format1 img {
+      width: auto; } }
 
 .atm-title_Underline-highlighted {
   position: relative;
@@ -318,7 +332,8 @@ template {
     border: 1px solid #ce2c23;
     width: 50%;
     position: absolute;
-    bottom: -2px; }
+    bottom: -2px;
+    background-color: #ce2c23; }
 
 .atm-title_Rectangle-highlighted {
   font-family: "Roboto";

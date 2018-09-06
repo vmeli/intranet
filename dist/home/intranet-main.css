@@ -373,6 +373,9 @@ template {
   .atm-btn__Rectangle.atm-btn__Rectangle--ElPopular {
     background-color: #ec0044; }
 
+.mol-nav_Main {
+  padding: 2rem 0 3rem; }
+
 .org-section-bloques__SliderMain .Format1__slider {
   position: relative; }
 

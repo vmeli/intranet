@@ -5,9 +5,9 @@ window.addEventListener('load', function () {
 	var sliderGaleria = new Carousel({
 		elem: 'mol-slider_Main',
 		touch: true,
-		autoplay: false,
-		infinite: false,
-		interval: 3500,
+		autoplay: true,
+		infinite: true,
+		interval: 3000,
 		initial: 0,
 		dots: true,
 		arrows: true,

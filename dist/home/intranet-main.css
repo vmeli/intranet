@@ -401,6 +401,14 @@ template {
 .org-section-bloques__SliderMain #mol-slider_Main .js-Carousel_slide-items {
   visibility: visible; }
 
+.org-section-bloques__SliderMain #mol-slider_Main.js-Carousel .js-Carousel-dots {
+  visibility: visible; }
+  .org-section-bloques__SliderMain #mol-slider_Main.js-Carousel .js-Carousel-dots li {
+    box-shadow: initial;
+    background: #FFF; }
+    .org-section-bloques__SliderMain #mol-slider_Main.js-Carousel .js-Carousel-dots li.is-active {
+      background: #ce2c23; }
+
 .org-section-bloque__Calendar #v-cal .vcal-date {
   color: #606060; }
 

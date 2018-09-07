@@ -22,20 +22,28 @@
 		width: 75%;
 	}
 	#mol-slider_Main {
-		.js-Carousel_slide-items {
-			visibility: visible;
-		}
-		&.js-Carousel {
-			.js-Carousel-dots {
-				visibility: visible;
-				li {
-					box-shadow: initial;
-					background: #FFF;
-					&.is-active {
-						background: #ce2c23;
-					}
-				}
+		.swiper-pagination-bullet {
+			background: #FFF;
+			opacity: 1;
+			&#{&}-active {
+				color: #ce2c23;
 			}
 		}
+		//.js-Carousel_slide-items {
+		//	visibility: visible;
+		//}
+		//&.js-Carousel {
+		//	.js-Carousel-dots {
+		//		visibility: visible;
+		//		li {
+		//			box-shadow: initial;
+		//			background: #FFF;
+		//			&.is-active {
+		//				background: #ce2c23;
+		//			}
+		//		}
+		//	}
+		//}
 	}
 }
+

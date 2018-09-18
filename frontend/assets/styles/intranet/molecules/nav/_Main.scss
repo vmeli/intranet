@@ -1,3 +1,60 @@
 .mol-nav_Main {
-	padding: 2rem 0 3rem;	
+	padding: 2rem 0 3rem;
+	font-size: 0;
+	.Main-list {
+		display: none;
+	}
+	.Main-logo,
+	.Main-list {
+		display: inline-block;
+		vertical-align: middle;
+		@include cell1000p {
+			width: calc(100% / 3);
+		}
+	}
+	.list-ul__list {
+		font-size: 0;
+		.list-cell{
+			display: inline-block;
+			vertical-align: middle;
+			a {
+				font-size: 1rem;
+				color: #FFF;
+				padding: 0 9px 5px;
+				display: block;
+			}
+			&:first-of-type {
+				&::after {
+					content: "";
+					display: block;
+					width: 0;
+					height: 2px;
+					background-color: #fff;
+					transition: width .3s;
+				}
+				&:hover {
+					&::after {
+						width: 100%;
+					}
+				}
+			}
+			&:last-of-type {
+				&::after {
+					content: "";
+					display: block;
+					margin: auto;
+					width: 0;
+					height: 2px;
+					background: transparent;
+					transition: width .5s ease, background-color .5s ease;
+				}
+				&:hover {
+					&::after {
+						width: 100%;
+						background: #FFF;
+					}
+				}
+			}
+		}
+	}	
 }

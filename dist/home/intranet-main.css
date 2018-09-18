@@ -374,7 +374,52 @@ template {
     background-color: #ec0044; }
 
 .mol-nav_Main {
-  padding: 2rem 0 3rem; }
+  padding: 2rem 0 3rem;
+  font-size: 0; }
+  .mol-nav_Main .Main-list {
+    display: none; }
+  .mol-nav_Main .Main-logo,
+  .mol-nav_Main .Main-list {
+    display: inline-block;
+    vertical-align: middle; }
+    @media (min-width: 1000px) {
+      .mol-nav_Main .Main-logo,
+      .mol-nav_Main .Main-list {
+        width: calc(100% / 3); } }
+  .mol-nav_Main .list-ul__list {
+    font-size: 0; }
+    .mol-nav_Main .list-ul__list .list-cell {
+      display: inline-block;
+      vertical-align: middle; }
+      .mol-nav_Main .list-ul__list .list-cell a {
+        font-size: 1rem;
+        color: #FFF;
+        padding: 0 9px 5px;
+        display: block; }
+      .mol-nav_Main .list-ul__list .list-cell:first-of-type::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+        transition: width .3s; }
+      .mol-nav_Main .list-ul__list .list-cell:first-of-type:hover::after {
+        width: 100%; }
+      .mol-nav_Main .list-ul__list .list-cell:last-of-type::after {
+        content: "";
+        display: block;
+        margin: auto;
+        width: 0;
+        height: 2px;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease; }
+      .mol-nav_Main .list-ul__list .list-cell:last-of-type:hover::after {
+        width: 100%;
+        background: #FFF; }
+
+@media (min-width: 1000px) {
+  .org-section-bloques__SliderMain {
+    padding-bottom: 3rem; } }
 
 .org-section-bloques__SliderMain .Format1__slider {
   position: relative; }

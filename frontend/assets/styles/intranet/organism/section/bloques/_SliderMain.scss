@@ -1,4 +1,7 @@
 .org-section-bloques__SliderMain {
+	@include cell1000p {
+		padding-bottom: 3rem;
+	}
 	.Format1__slider {
 		position: relative;
 	}

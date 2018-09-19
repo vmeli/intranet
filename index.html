@@ -444,32 +444,36 @@
 				transform: scale(0);
 				z-index: 1;
 				background: rgba(0,0,0,0.9);
-			}
-			#modal-container::before {
-				content: "X";
-				position: absolute;
-				top: 1.5rem;
-				right: 1.5rem;
-				color: #FFF;
-				opacity: 0.8;
-				font-size: 3rem;
-			} 
-			#modal-container:hover::before {
-				cursor: pointer;
+				overflow-x: hidden;
+    			overflow-y: auto;
 			}
 			#modal-container .modal-background {
 				text-align: center;
 				height: 100%;
 				width: 100%;
 				display: flex;
-				justify-content: center;
+				/*justify-content: center;
 				align-items: center;
+				align-items: end;*/
+			}
+			#modal-container .modal-background::before {
+				content: "X";
+				position: absolute;
+				top: 1.5rem;
+				right: 1.5rem;
+				color: #FFF;
+				font-size: 3rem;
+				opacity: 0.5;
+			}
+			#modal-container .modal-background:hover::before {
+				cursor: pointer;
+				/*opacity: 1;*/
 			}
 			#modal-container .modal {
 				width: 80%;
 				max-width: 639px;
 				position: relative;
-				margin: 0 auto;
+				margin: auto;
 			}
 			#modal-container .modal img {
 				width: 100%;

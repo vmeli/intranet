@@ -1,0 +1,48 @@
+.org-section-bloque__Quiz {
+	.form-list {
+		counter-reset: iniciador;
+	}
+	.form-item {
+		counter-increment: incremento;
+		&:before {
+			content: counter(incremento) '. ';
+			color: red;
+			margin-right: 3px;
+		}
+	}
+	input[type=radio] {
+		position: relative;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		-o-appearance: none;
+		appearance: none;
+		right: 0;
+		bottom: 0;
+		height: 20px;
+		width: 20px;
+		vertical-align: -0.8rem;
+		transition:all .15s ease-out 0s;
+		color: #fff;
+		cursor: pointer;
+		display: inline-block;
+		margin: .4rem;
+		outline: none;
+		border-radius: 50%;
+		border: 1.5px solid #f16362;
+		&:checked:before {
+			transform: scale(1);
+			background: #f16362;
+		}
+        &:before {
+			content: "";
+			display: block;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			margin: 3.5px;
+			transform: scale(0);
+			transition: all ease-out 250ms;
+        }		
+	}
+}

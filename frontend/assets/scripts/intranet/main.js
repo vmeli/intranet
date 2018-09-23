@@ -42,7 +42,8 @@ function setCheck(){
 /**** PINTAR FECHAS CALENDARIO ****/
 	let btnNext = document.querySelector("[data-calendar-toggle='next']");
 	let btnPrevious = document.querySelector("[data-calendar-toggle='previous']");
-	let url = "http://qaintranet.glr.pe/api/node-list?_format=json&calendar=1&type=event";
+	let url = "https://api.myjson.com/bins/f2u2s";
+	//let url = "http://qaintranet.glr.pe/api/node-list?_format=json&calendar=1&type=event";
 	var request = new XMLHttpRequest();
 	request.open('GET', url, true);
 

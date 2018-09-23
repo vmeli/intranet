@@ -408,9 +408,6 @@ a {
   padding: 19.2px 0;
   padding: 1.2rem 0; }
 
-#v-cal .vcal-date--active {
-  cursor: pointer; }
-
 #v-cal .vcal-date--today {
   background-color: #10989e;
   color: #fff; }

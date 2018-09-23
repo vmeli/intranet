@@ -32,7 +32,7 @@ var vanillaCalendar = {
     },
     createMonth: function() {
         for (var t = this.date.getMonth(); this.date.getMonth() === t;) this.createDay(this.date.getDate(), this.date.getDay(), this.date.getFullYear()), this.date.setDate(this.date.getDate() + 1);
-        this.date.setDate(1), this.date.setMonth(this.date.getMonth() - 1), this.label.innerHTML = this.monthsAsString(this.date.getMonth()) + " " + this.date.getFullYear(), this.dateClicked()
+        this.date.setDate(1), this.date.setMonth(this.date.getMonth() - 1), this.label.setAttribute('data-number-month',((t+1)<10 ? '0'+ (t+1) : t+1)),this.label.innerHTML = this.monthsAsString(this.date.getMonth()) + " " + this.date.getFullYear(), this.dateClicked()
     },
     monthsAsString: function(t) {
         return ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre"][t]

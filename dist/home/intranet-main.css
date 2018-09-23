@@ -472,6 +472,11 @@ template {
   background-color: #F4E2E2;
   color: #CE2C23; }
 
+.org-section-bloque__Calendar #v-cal .vcal-date.dia-programada {
+  border: 1px solid #FFF;
+  background-color: #F4E2E2;
+  cursor: pointer; }
+
 @media (min-width: 1000px) {
   .org-section-bloque__Eventos .atm-title_Rectangle-highlighted,
   .org-section-bloque__Comunicados .atm-title_Rectangle-highlighted {

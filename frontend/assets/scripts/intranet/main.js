@@ -139,3 +139,71 @@ var swiper = new Swiper('#sliderInterna', {
       },
 });
 
+var allQuestions = document.getElementsByClassName('form-item');
+var allRadioInput = Array.from(document.getElementsByClassName('input__radio'));
+var radioInputSelectedValue = '';
+var btnSubmint = document.getElementById("btnSubmit");
+
+var demo = (e) => {
+	var elementTargetClick = e.target;
+	let getClosest = function ( elem, selector ) {
+
+            // Element.matches() polyfill
+            if (!Element.prototype.matches) {
+                Element.prototype.matches =
+                    Element.prototype.matchesSelector ||
+                    Element.prototype.mozMatchesSelector ||
+                    Element.prototype.msMatchesSelector ||
+                    Element.prototype.oMatchesSelector ||
+                    Element.prototype.webkitMatchesSelector ||
+                    function(s) {
+                        var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+                            i = matches.length;
+                        while (--i >= 0 && matches.item(i) !== this) {}
+                        return i > -1;
+                    };
+            }
+
+            // Get closest match
+            for ( ; elem && elem !== document; elem = elem.parentNode ) {
+                if ( elem.matches( selector ) ) return elem;
+            }
+
+            return null;
+
+        };
+        //var parentBlockClick = getClosest(elementTargetClick, '.form-item');
+        //parentBlockClick.classList.add('active');
+        radioInputSelectedValue = elementTargetClick.value;
+};
+
+var validationInput = (e) => {
+	e.preventDefault();
+	var t = true;
+	var f = ''
+	Array.from(allQuestions).map(function(element) {
+		t = t && d(element);
+		//d(element);
+	});
+	function d(element) {
+		var r = false;
+		var w = '';
+		Array.from(element.querySelectorAll('.input__radio')).map(function(elementInput) {
+			r = r || elementInput.checked;	
+			//console.log(elementInput.checked);
+			//if (elementInput.checked) {
+			// 	return elementInput.value	
+			//} 
+		});
+		//console.log(r, 'w');
+		return r;	
+	}
+	t ? console.log('enviando') : console.log('falta llenar');
+}
+
+allRadioInput.map(function(x){
+	x.onclick = demo;
+})
+
+btnSubmit.onclick = validationInput;
+

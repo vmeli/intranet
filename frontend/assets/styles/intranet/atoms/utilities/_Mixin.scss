@@ -1,0 +1,3 @@
+@mixin aspectRatioPaddingTop($height, $width) {
+  padding-top: ($height / $width )*100%;
+}

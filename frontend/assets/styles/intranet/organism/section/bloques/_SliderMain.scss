@@ -1,4 +1,11 @@
 .org-section-bloques__SliderMain {
+	.Format1__figure {
+		@extend %aspectRatioWrapper;
+		@include aspectRatioPaddingTop(282, 1000);
+		img {
+			@extend %aspectRatio;
+		}
+	}
 	@include cell1000p {
 		padding-bottom: 3rem;
 	}

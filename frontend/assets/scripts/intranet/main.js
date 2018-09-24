@@ -108,3 +108,34 @@ function setCheck(){
 				console.log(data[yearCurrent][monthCurrent]['days'][indice]['url']);			} 
 		}
 	}
+
+var swiper = new Swiper('#sliderHeader', {
+      slidesPerView: 1,
+      effect: 'fade',
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+});
+var swiper = new Swiper('#sliderInterna', {
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+});
+

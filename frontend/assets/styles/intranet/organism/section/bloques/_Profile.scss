@@ -1,0 +1,43 @@
+.org-section-bloque__Profile {
+	font-size: 0;
+	.information-header {
+		padding-bottom: 1.5rem;
+		margin-bottom: 1.5rem;
+		border-bottom: 2px solid #F0F0F0;
+	}
+	figure,
+	.information-text {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 1.6rem;
+		overflow: hidden;
+	}
+	figure {
+		width: 110px;
+		img {
+			width: 100%;
+		}
+	}
+	.information-text {
+		overflow: hidden;
+		width: calc(100% - 110px);
+		padding-left: 2rem;
+		div {
+			width: 50%;
+			float: left;
+			margin-bottom: 1.3rem;
+		}
+	}
+	.information-text-body {
+		padding-bottom: 1.5rem;
+		margin-bottom: 1.5rem;
+		border-bottom: 2px solid #F0F0F0;
+		overflow: hidden;
+		div {
+			width: 50%;
+			float: left;
+			font-size: 1.6rem;
+			margin-bottom: 1.5rem;
+		}
+	}
+}

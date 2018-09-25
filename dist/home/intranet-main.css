@@ -543,6 +543,41 @@ template {
     transform: scale(0);
     transition: all ease-out 250ms; }
 
+.org-section-bloque__Profile {
+  font-size: 0; }
+  .org-section-bloque__Profile .information-header {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #F0F0F0; }
+  .org-section-bloque__Profile figure,
+  .org-section-bloque__Profile .information-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.6rem;
+    overflow: hidden; }
+  .org-section-bloque__Profile figure {
+    width: 110px; }
+    .org-section-bloque__Profile figure img {
+      width: 100%; }
+  .org-section-bloque__Profile .information-text {
+    overflow: hidden;
+    width: calc(100% - 110px);
+    padding-left: 2rem; }
+    .org-section-bloque__Profile .information-text div {
+      width: 50%;
+      float: left;
+      margin-bottom: 1.3rem; }
+  .org-section-bloque__Profile .information-text-body {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #F0F0F0;
+    overflow: hidden; }
+    .org-section-bloque__Profile .information-text-body div {
+      width: 50%;
+      float: left;
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem; }
+
 .mol-mediaObject__FormatBaseMediaObject {
   font-size: 0; }
   .mol-mediaObject__FormatBaseMediaObject [class$="__container-image"],

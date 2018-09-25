@@ -23,9 +23,11 @@ function closeModal(e) {
 function endAnimation() {
 	modalContainer.remove();
 }
-window.addEventListener('load',addingClass);
-modalContainer.addEventListener	('click', closeModal);
-window.addEventListener('keyup', closeModal);
+if(modalBackground) {
+	window.addEventListener('load',addingClass);
+	modalContainer.addEventListener	('click', closeModal);
+	window.addEventListener('keyup', closeModal);
+}
 
 let allRadioBtns = document.getElementsByClassName("input__radio"),
 	radioBtnSelectedValue
@@ -108,36 +110,39 @@ function setCheck(){
 				console.log(data[yearCurrent][monthCurrent]['days'][indice]['url']);			} 
 		}
 	}
-
-var swiper = new Swiper('#sliderHeader', {
-      slidesPerView: 1,
-      effect: 'fade',
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-});
-var swiper = new Swiper('#sliderInterna', {
-      slidesPerView: 1,
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-});
+if(document.getElementById('sliderHeader')) {
+	var swiper = new Swiper('#sliderHeader', {
+	      slidesPerView: 1,
+	      effect: 'fade',
+	      loop: true,
+	      pagination: {
+	        el: '.swiper-pagination',
+	        clickable: true,
+	      },
+	      autoplay: {
+	        delay: 2500,
+	        disableOnInteraction: false,
+	      },
+	      navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+	      },
+	});
+}
+if(document.getElementById('sliderInterna')) {
+	var swiper = new Swiper('#sliderInterna', {
+	      slidesPerView: 1,
+	      loop: true,
+	      pagination: {
+	        el: '.swiper-pagination',
+	        clickable: true,
+	      },
+	      navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+	      },
+	});
+}
 
 var allQuestions = document.getElementsByClassName('form-item');
 var allRadioInput = Array.from(document.getElementsByClassName('input__radio'));
